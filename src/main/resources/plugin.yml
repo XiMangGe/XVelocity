@@ -1,0 +1,24 @@
+version: 26.10.25.1
+name: XVelocity
+main: com.xmangge.xvelocity.XVelocity
+api-version: '1.20'
+description: Modify minecart speed limits on Paper/Purpur servers
+author: XiMangGe
+softdepend: []
+website: https://github.com/XiMangGe/XVelocity
+
+commands:
+  xvelocity:
+    description: Main command for XVelocity plugin
+    usage: "/xvelocity <subcommand>"
+    aliases: [xv, xvel]
+    permission: xvelocity.admin
+    permission-message: "§c你没有权限使用此命令。"
+
+permissions:
+  xvelocity.admin:
+    description: Allows using all XVelocity commands
+    default: op
+  xvelocity.use:
+    description: Allows using XVelocity display features
+    default: true
